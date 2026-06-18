@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dashboard Antrean BPS Halmahera Timur</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style1.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="dashboard">
+      <header>
+        <div class="title">Sistem Antrean BPS Kabupaten Halmahera Timur</div>
+
+        <div class="clock">
+          <div id="date"></div>
+          <div id="time"></div>
+        </div>
+      </header>
+
+      <main>
+        <!-- DISPLAY -->
+        <section class="display" id="display"></section>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+          <div class="card">
+            <h3>Antrean Berikutnya</h3>
+            <div id="list"></div>
+          </div>
+
+          <div class="card">
+            <h3>Total Menunggu</h3>
+            <h1 id="total">0</h1>
+          </div>
+        </aside>
+      </main>
+
+      <footer>Mohon menunggu hingga nomor Anda dipanggil</footer>
+    </div>
+
+    <script src="js/script1.js"></script>
+  </body>
+</html>

@@ -3,7 +3,7 @@
     =========================== */
 
 const API_URL =
-  "https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnQg6UxcYpWRoWFU5RYVueOcN53gDtW-FMXNV1wdot9W1OcIOygSRywgH6avktCTUCzlmpospeedFHCKTxCI5Ap9sJ5e8Gmz8JM9j0tGZOw6hWb9N9-mnkheqQqar2lognEyCUWadmy39XmGpTInGvfoSb6KyqgrTQRP1hMpG0YY1bWEhqLA5L4tqvvzNVuGI5XFHig36vhRcA7nKEwfIcDtFXcVRk0umhCu4glov8V5maybOUfWfL7tRcyfMGR9KbpBa6DyP3Qv7BBkajdnYgM-x5Lpvg&lib=M5gLFUYSFiaSYAcUggOmqYMlgMUXZopaT";
+  "https://script.google.com/macros/s/AKfycbzINblxyrxXqwc4lf8-FlnLQSuWPcMy97MidCLCSh0OHQt67VYwjJwnqCQoVwVhwgSlxQ/exec";
 
 /* ===========================
        CLOCK
@@ -70,7 +70,7 @@ function render(data) {
   display.innerHTML = `
         <div class="center fade">
           <div class="label">NOMOR ANTREAN SAAT INI</div>
-          <div class="number">${current.kode}</div>
+          <div class="number">${current.kodeantrean}</div>
         </div>
       `;
 
@@ -78,7 +78,7 @@ function render(data) {
   data.slice(1, 6).forEach((item, i) => {
     list.innerHTML += `
           <div class="item ${i === 0 ? "active" : ""}">
-            ${item.kode}
+            ${item.kodeantrean}
           </div>
         `;
   });
